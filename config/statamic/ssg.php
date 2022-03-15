@@ -60,7 +60,7 @@ return [
     */
 
     'urls' => [
-        //
+        'books'
     ],
 
     /*
@@ -73,7 +73,10 @@ return [
     */
 
     'exclude' => [
-        //
+        '/books/genre/*',
+        '/books/author/*',
+        '/genre/*',
+        '/authors',
     ],
 
     /*
