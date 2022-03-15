@@ -1,0 +1,12 @@
+name: Maciek
+super: true
+id: 0e8184c0-0adc-4431-b6d2-2a4b5780c44b
+password_hash: $2y$10$C65Voe0MxydRcS5Oylv9jet1oL9VzkzqHJU2bXdlrgKuoFAfGtgJe
+preferences:
+  collections:
+    books:
+      columns:
+        - title
+        - cover
+        - author
+        - slug

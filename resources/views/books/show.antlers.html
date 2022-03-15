@@ -1,0 +1,29 @@
+<article class="max-w-5xl mx-auto px-3">
+    <header class="mx-auto max-w-3xl text-center content">
+        <h1>{{ title }}</h1>
+        <div class="my-12 flex items-center justify-center">
+            <div class="text-left">
+                {{ if author }}
+                <div>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-hot-pink to-purple-500">
+                        Author: {{ author }}{{ title }}{{ /author }}
+                    </span>
+                </div>
+                {{ /if }}
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-3xl mx-auto py-6 lg:py-12 content">
+        <img class="float-left mr-16 mt-0" src="{{ cover }}" alt="">
+        {{ review }}
+
+        Genre:
+        <ul>
+        {{ genre }}
+            <li>{{ title }}</li>
+        {{ /genre }}
+        </ul>
+    </section>
+
+</article>

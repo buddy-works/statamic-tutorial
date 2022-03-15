@@ -1,0 +1,26 @@
+<article class="max-w-6xl mx-auto px-3">
+    <header class="mx-auto max-w-xl text-center content">
+        <h1 class="mb-4">Books</h1>
+    </header>
+    {{ collection:books as="books" paginate="12" }}
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+        {{ books }}
+            <div class="col-span-1">
+                {{ partial:books/card }}
+            </div>
+        {{ /books }}
+    </section>
+    {{ paginate }}
+        {{ if prev_page || next_page }}
+        <section class="flex space-x-8 justify-center text-xl pt-16 font-bold">
+            {{ if prev_page }}
+                <a href="{{ prev_page }}"><span class="squiggle">&larr;</span> Newer</a>
+            {{ /if }}
+            {{ if next_page }}
+                <a href="{{ next_page }}">Older <span class="squiggle">&rarr;</span></a>
+            {{ /if }}
+        </section>
+        {{ /if }}
+    {{ /paginate }}
+    {{ /collection:books }}
+</article>

@@ -1,0 +1,11 @@
+title: 'Test globals'
+data:
+  replicator_field:
+    -
+      assets_field:
+        - blinking-carot.gif
+        - donut.jpg
+        - idea.jpg
+        - octopus.jpg
+      type: new_set
+      enabled: true

@@ -1,0 +1,86 @@
+title: Books
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: review
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: Review
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+      -
+        handle: cover
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Cover
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          max_files: 1
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: author
+        field:
+          type: terms
+          taxonomies:
+            - author
+          display: Author
+          mode: typeahead
+          instructions_position: above
+          listable: hidden
+          create: true
+      -
+        handle: genre
+        field:
+          type: terms
+          taxonomies:
+            - genre
+          display: Genre
+          mode: default
+          instructions_position: above
+          listable: hidden
+          create: true

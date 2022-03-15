@@ -1,0 +1,56 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: replicator_field
+        field:
+          collapse: false
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: assets_field
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: 'Assets Field'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+            text_block:
+              display: 'Text block'
+              fields:
+                -
+                  handle: some_title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Some title'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: markdown_field
+                  field:
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: false
+                    escape_markup: false
+                    smartypants: false
+                    antlers: false
+                    display: 'Markdown Field'
+                    type: markdown
+                    icon: markdown
+                    listable: hidden
+                    instructions_position: above
+          display: 'Replicator Field'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above

@@ -1,0 +1,10 @@
+title: Books
+template: books/show
+route: 'book/{slug}'
+taxonomies:
+  - author
+  - genre
+revisions: false
+date_behavior:
+  past: public
+  future: private
