@@ -1,6 +1,7 @@
 title: Books
 template: books/show
-route: 'book/{slug}'
+route: '{mount}/{slug}'
+mount: '9c9ed867-0ef9-456d-ac10-2bec4e6fa992'
 taxonomies:
   - author
   - genre
